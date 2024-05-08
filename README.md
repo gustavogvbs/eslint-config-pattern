@@ -46,6 +46,14 @@ or
 
 ### Step 3
 
+Inside `.prettierrc.json`
+
+```
+{
+  "extends": "gustavogvbs/eslint-config/prettier"
+}
+```
+
 ---
 
 #### Optional
