@@ -9,7 +9,6 @@ module.exports = {
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:prettier/recommended",
-		"prettier",
 	],
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
@@ -27,10 +26,10 @@ module.exports = {
 			{
 				printWidth: 100,
 				tabWidth: 2,
-				useTabs: false,
-				semi: true,
+				semi: false,
 				singleQuote: false,
-				arrowParens: "always",
+				arrowParens: "avoid",
+				trailingComma: "all",
 			},
 		],
 		"react/react-in-jsx-scope": "off",

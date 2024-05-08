@@ -1,6 +1,6 @@
 {
 	"name": "@gustavogvbs/eslint-config",
-	"version": "1.0.0",
+	"version": "1.0.7",
 	"description": "ESLint configuration used by me.",
 	"main": "index.js",
 	"author": "gustavogvbs",
@@ -31,11 +31,6 @@
 	"peerDependencies": {
 		"eslint": "^8.0.0",
 		"typescript": ">=5"
-	},
-	"peerDependenciesMeta": {
-		"typescript": {
-			"optional": true
-		}
 	},
 	"devDependencies": {},
 	"scripts": {
