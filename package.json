@@ -5,6 +5,14 @@
 	"main": "index.js",
 	"author": "gustavogvbs",
 	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gustavogvbs/eslint-config-pattern.git"
+	},
+	"homepage": "https://github.com/gustavogvbs/eslint-config-pattern#readme",
+	"bugs": {
+		"url": "https://github.com/gustavogvbs/eslint-config-pattern/issues"
+	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^7.8.0",
 		"@typescript-eslint/parser": "^7.8.0",
@@ -28,5 +36,18 @@
 		"typescript": {
 			"optional": true
 		}
-	}
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"eslint",
+		"eslintrc",
+		"eslintconfig",
+		"typescript",
+		"react",
+		"node",
+		"code-style"
+	]
 }
