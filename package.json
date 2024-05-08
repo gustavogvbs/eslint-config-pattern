@@ -1,48 +1,48 @@
 {
-	"name": "@gustavogvbs/eslint-config",
-	"version": "1.0.7",
-	"description": "ESLint configuration used by me.",
-	"main": "index.js",
-	"author": "gustavogvbs",
-	"license": "ISC",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/gustavogvbs/eslint-config-pattern.git"
-	},
-	"homepage": "https://github.com/gustavogvbs/eslint-config-pattern#readme",
-	"bugs": {
-		"url": "https://github.com/gustavogvbs/eslint-config-pattern/issues"
-	},
-	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^7.8.0",
-		"@typescript-eslint/parser": "^7.8.0",
-		"eslint": "^8.0.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-import": "^2.29.1",
-		"eslint-plugin-import-helpers": "^1.3.1",
-		"eslint-plugin-jsx-a11y": "^6.8.0",
-		"eslint-plugin-n": "^17.5.1",
-		"eslint-plugin-prettier": "^5.1.3",
-		"eslint-plugin-promise": "^6.1.1",
-		"eslint-plugin-react": "^7.34.1",
-		"eslint-plugin-react-hooks": "^4.6.2",
-		"prettier": "^3.2.5"
-	},
-	"peerDependencies": {
-		"eslint": "^8.0.0",
-		"typescript": ">=5"
-	},
-	"devDependencies": {},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"eslint",
-		"eslintrc",
-		"eslintconfig",
-		"typescript",
-		"react",
-		"node",
-		"code-style"
-	]
+  "name": "@gustavogvbs/eslint-config",
+  "version": "1.0.8",
+  "description": "ESLint configuration used by me.",
+  "main": "index.js",
+  "author": "gustavogvbs",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavogvbs/eslint-config-pattern.git"
+  },
+  "homepage": "https://github.com/gustavogvbs/eslint-config-pattern#readme",
+  "bugs": {
+    "url": "https://github.com/gustavogvbs/eslint-config-pattern/issues"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^17.5.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.2.5"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "typescript": ">=5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintrc",
+    "eslintconfig",
+    "typescript",
+    "react",
+    "node",
+    "code-style"
+  ]
 }
