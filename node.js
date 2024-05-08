@@ -25,10 +25,10 @@ module.exports = {
 			{
 				printWidth: 100,
 				tabWidth: 2,
-				singleQuote: false,
-				trailingComma: "all",
-				arrowParens: "always",
+				useTabs: false,
 				semi: true,
+				singleQuote: false,
+				arrowParens: "always",
 			},
 		],
 	},

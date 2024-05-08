@@ -27,9 +27,10 @@ module.exports = {
 			{
 				printWidth: 100,
 				tabWidth: 2,
+				useTabs: false,
+				semi: true,
 				singleQuote: false,
 				arrowParens: "always",
-				semi: true,
 			},
 		],
 		"react/react-in-jsx-scope": "off",
