@@ -10,7 +10,7 @@
 
 ## Setup
 
-#### Step 1
+### Step 1
 
 Install dependencies
 
@@ -56,7 +56,7 @@ Inside `.prettierrc.json`
 
 ---
 
-#### Optional
+### Optional
 
 Adding plugin configuration `eslint-plugin-import-helpers`
 
