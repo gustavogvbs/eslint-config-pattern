@@ -38,7 +38,7 @@ or
 
 ```
 {
-  "extends": "@rocketseat/eslint-config/node"
+  "extends": "@gustavogvbs/eslint-config/react"
 }
 ```
 
