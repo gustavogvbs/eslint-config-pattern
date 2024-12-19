@@ -20,6 +20,20 @@ module.exports = {
 	},
 	plugins: ["react", "jsx-a11y", "@typescript-eslint", "import-helpers"],
 	rules: {
+		"no-undef": "error",
+		eqeqeq: "error",
+		"no-unused-vars": "error",
+		"no-unreachable": "error",
+		"prefer-const": "error",
+		"no-console": ["error", { allow: ["warn", "error"] }],
+		"react/jsx-sort-props": [
+			"error",
+			{ callbacksLast: true, shorthandFirst: true },
+		],
+		"react/self-closing-comp": "error",
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/explicit-function-return-type": "warn",
+		"react/jsx-key": "error",
 		"react/self-closing-comp": "error",
 		"prettier/prettier": [
 			"error",

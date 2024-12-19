@@ -15,6 +15,10 @@ module.exports = {
 	},
 	plugins: ["@typescript-eslint", "import-helpers"],
 	rules: {
+		eqeqeq: "error",
+		"no-unused-vars": "error",
+		"no-unreachable": "error",
+		"prefer-const": "error",
 		"no-console": ["error", { allow: ["warn", "error"] }],
 		"@typescript-eslint/explicit-function-return-type": "error",
 		"@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
