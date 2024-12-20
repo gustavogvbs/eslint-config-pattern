@@ -44,6 +44,7 @@ module.exports = [
 		},
 	},
 	pluginJs.configs.recommended,
+	jsxA11y.flatConfigs.recommended,
 	...tseslint.configs.recommended,
 	{
 		rules: {
