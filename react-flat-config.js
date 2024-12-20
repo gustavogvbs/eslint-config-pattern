@@ -25,7 +25,7 @@ const pluginsOptions = {
 	import: importPlugin,
 	"import/parsers": tsParser,
 	"react-hooks": fixupPluginRules(reactHooksPlugin),
-	prettier: prettierPlugin,
+	prettier: prettierPlugin.rules,
 	jsxA11y: jsxA11y,
 	react: reactPlugin,
 };
@@ -83,10 +83,10 @@ module.exports = [
 			"prettier/prettier": [
 				"error",
 				{
-					printWidth: 100,
+					printWidth: 80,
 					tabWidth: 2,
 					useTabs: false,
-					semi: false,
+					semi: true,
 					singleQuote: false,
 					arrowParens: "avoid",
 					trailingComma: "all",
