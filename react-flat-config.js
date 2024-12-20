@@ -6,6 +6,8 @@ const tsParser = require("@typescript-eslint/parser");
 const reactHooksPlugin = require("eslint-plugin-react-hooks");
 const prettierPlugin = require("eslint-plugin-prettier");
 const { fixupPluginRules } = require("@eslint/compat");
+const reactPlugin = require("eslint-plugin-react");
+const jsxA11y = require("eslint-plugin-jsx-a11y");
 
 const languageOptions = {
 	globals: {
@@ -15,6 +17,8 @@ const languageOptions = {
 	ecmaVersion: "latest",
 	sourceType: "module",
 	parser: tsParser,
+	"jsx-a11y": jsxA11y,
+	react: reactPlugin,
 };
 
 const pluginsOptions = {
