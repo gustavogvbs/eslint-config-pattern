@@ -32,7 +32,7 @@ const pluginsOptions = {
 
 module.exports = [
 	{ files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
-	{ ignores: ["**/node_modules", "**/dist"] },
+	{ ignores: ["**/node_modules", "**/dist", "**/eslint.config.*"] },
 	{
 		plugins: {
 			...pluginsOptions,
@@ -49,24 +49,27 @@ module.exports = [
 	{
 		rules: {
 			...reactHooksPlugin.configs.recommended.rules,
-			"no-undef": "error",
 			eqeqeq: "error",
 			"no-unused-vars": "error",
 			"no-unreachable": "error",
 			"prefer-const": "error",
 			"no-console": ["error", { allow: ["warn", "error"] }],
+
+			"@typescript-eslint/no-explicit-any": "error",
+			"@typescript-eslint/explicit-function-return-type": "warn",
+
 			"react/jsx-sort-props": [
 				"error",
 				{ callbacksLast: true, shorthandFirst: true },
 			],
+
 			"react/self-closing-comp": "error",
-			"@typescript-eslint/no-explicit-any": "error",
-			"@typescript-eslint/explicit-function-return-type": "warn",
 			"react/jsx-key": "error",
 			"react/self-closing-comp": "error",
-
 			"react/react-in-jsx-scope": "off",
 			"react/prop-types": "off",
+			"react/no-unknown-property": "error",
+
 			"jsx-a11y/alt-text": [
 				"warn",
 				{
@@ -79,7 +82,6 @@ module.exports = [
 			"jsx-a11y/aria-unsupported-elements": "warn",
 			"jsx-a11y/role-has-required-aria-props": "warn",
 			"jsx-a11y/role-supports-aria-props": "warn",
-			"react/no-unknown-property": "error",
 			"prettier/prettier": [
 				"error",
 				{
