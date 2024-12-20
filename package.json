@@ -1,6 +1,6 @@
 {
 	"name": "@gustavogvbs/eslint-config",
-	"version": "2.3.4",
+	"version": "2.3.5",
 	"description": "ESLint configuration used by me.",
 	"main": "index.js",
 	"author": "gustavogvbs",
