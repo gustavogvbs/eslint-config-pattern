@@ -64,17 +64,7 @@ module.exports = [
 			"@typescript-eslint/explicit-function-return-type": "warn",
 			"react/jsx-key": "error",
 			"react/self-closing-comp": "error",
-			"prettier/prettier": [
-				"error",
-				{
-					printWidth: 100,
-					tabWidth: 2,
-					semi: false,
-					singleQuote: false,
-					arrowParens: "avoid",
-					trailingComma: "all",
-				},
-			],
+
 			"react/react-in-jsx-scope": "off",
 			"react/prop-types": "off",
 			"jsx-a11y/alt-text": [
@@ -90,6 +80,23 @@ module.exports = [
 			"jsx-a11y/role-has-required-aria-props": "warn",
 			"jsx-a11y/role-supports-aria-props": "warn",
 			"react/no-unknown-property": "error",
+			"prettier/prettier": [
+				"error",
+				{
+					printWidth: 100,
+					tabWidth: 2,
+					useTabs: false,
+					semi: false,
+					singleQuote: false,
+					arrowParens: "avoid",
+					trailingComma: "all",
+					jsxBracketSameLine: false,
+					bracketSpacing: true,
+				},
+				{
+					usePrettierrc: false,
+				},
+			],
 		},
 	},
 ];
