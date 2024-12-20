@@ -1,5 +1,5 @@
-const eslintRecommended = require("eslint/configs/recommended.json");
-const typescriptRecommended = require("@typescript-eslint/eslint-plugin/dist/configs/recommended.json");
+const eslintRecommended = require("eslint");
+const typescriptRecommended = require("@typescript-eslint/eslint-plugin");
 const prettierConfig = require("eslint-config-prettier");
 const typescriptParser = require("@typescript-eslint/parser");
 

@@ -1,12 +1,48 @@
-const eslintRecommended = require("eslint/configs/recommended.json");
-const reactRecommended = require("eslint-plugin-react/lib/configs/recommended.json");
-const reactHooksRecommended = require("eslint-plugin-react-hooks/lib/configs/recommended.json");
-const typescriptRecommended = require("@typescript-eslint/eslint-plugin/dist/configs/recommended.json");
-const prettierRecommended = require("eslint-config-prettier");
+const eslintRecommended = require("eslint");
+const eslintPlugin = require("@typescript-eslint/eslint-plugin");
+const reactPlugin = require("eslint-plugin-react");
+const hooksPlugin = require("eslint-plugin-react-hooks");
+const prettierPlugin = require("eslint-config-prettier");
+const eslint = require("@eslint/js");
 
 const typescriptParser = require("@typescript-eslint/parser");
 
 module.exports = [
+	eslintRecommended,
+	eslint.configs.recommended,
+	prettierPlugin,
+	{
+		plugins: {
+			react: reactPlugin,
+		},
+		rules: {
+			...reactPlugin.configs["jsx-runtime"].rules,
+		},
+		settings: {
+			react: {
+				version: "detect", // You can add this if you get a warning about the React version when you lint
+			},
+		},
+	},
+	{
+		plugins: {
+			"react-hooks": hooksPlugin,
+		},
+		rules: hooksPlugin.configs.recommended.rules,
+	},
+	{
+		plugins: {
+			react: reactPlugin,
+		},
+		rules: {
+			...reactPlugin.configs["jsx-runtime"].rules,
+		},
+		settings: {
+			react: {
+				version: "detect", // You can add this if you get a warning about the React version when you lint
+			},
+		},
+	},
 	{
 		parser: typescriptParser,
 		parserOptions: {
@@ -16,13 +52,14 @@ module.exports = [
 				jsx: true,
 			},
 		},
-		plugins: ["react", "jsx-a11y", "@typescript-eslint", "import-helpers"],
+		plugins: [
+			"react",
+			"jsx-a11y",
+			"@typescript-eslint",
+			"import-helpers",
+			{ eslintPlugin },
+		],
 		rules: {
-			...eslintRecommended.rules,
-			...reactRecommended.rules,
-			...reactHooksRecommended.rules,
-			...typescriptRecommended.rules,
-			...prettierRecommended.rules,
 			"no-undef": "error",
 			eqeqeq: "error",
 			"no-unused-vars": "error",
