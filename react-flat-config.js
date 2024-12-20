@@ -19,8 +19,6 @@ const languageOptions = {
 	ecmaVersion: "latest",
 	sourceType: "module",
 	parser: tsParser,
-	"jsx-a11y": jsxA11y,
-	react: reactPlugin,
 };
 
 const pluginsOptions = {
@@ -28,6 +26,8 @@ const pluginsOptions = {
 	"import/parsers": tsParser,
 	"react-hooks": fixupPluginRules(reactHooksPlugin),
 	prettier: prettierPlugin,
+	jsxA11y: jsxA11y,
+	react: reactPlugin,
 };
 
 module.exports = [
@@ -44,7 +44,6 @@ module.exports = [
 		},
 	},
 	pluginJs.configs.recommended,
-	jsxA11y.flatConfigs.recommended,
 	...tseslint.configs.recommended,
 	{
 		rules: {
