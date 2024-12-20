@@ -13,6 +13,8 @@ const languageOptions = {
 	globals: {
 		...globals.node,
 		...globals.jest,
+		...globals.serviceworker,
+		...globals.browser,
 	},
 	ecmaVersion: "latest",
 	sourceType: "module",
@@ -42,6 +44,7 @@ module.exports = [
 		},
 	},
 	pluginJs.configs.recommended,
+	jsxA11y.flatConfigs.recommended,
 	...tseslint.configs.recommended,
 	{
 		rules: {
