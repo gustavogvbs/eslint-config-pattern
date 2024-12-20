@@ -25,7 +25,7 @@ const pluginsOptions = {
 	import: importPlugin,
 	"import/parsers": tsParser,
 	"react-hooks": fixupPluginRules(reactHooksPlugin),
-	prettier: prettierPlugin.rules,
+	prettier: prettierPlugin,
 	jsxA11y: jsxA11y,
 	react: reactPlugin,
 };
