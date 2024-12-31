@@ -31,7 +31,7 @@ const pluginsOptions = {
 };
 
 module.exports = [
-	{ files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+	{ files: ["**/*.{js,mjs,cjs,ts,jsx,tsx,json,mjs}"] },
 	{ ignores: ["**/node_modules", "**/dist", "**/eslint.config.*"] },
 	{
 		plugins: {
